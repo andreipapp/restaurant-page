@@ -1,9 +1,13 @@
 export default function pageLoad() {
     const content = document.getElementById('content');
+    content.classList.add('content-load');
+
     content.innerHTML = '';
 
     const h1 = document.createElement('h1');
+    h1.classList.add('title');
     const h2 = document.createElement('h2');
+    h2.classList.add('title');
     h1.textContent = 'Le Jardin Étoilé';
     h2.textContent = '"A Symphony of French Elegance"';
     content.appendChild(h1);
@@ -30,7 +34,9 @@ export default function pageLoad() {
 
     descriptions.forEach(description => {
         const h3 = document.createElement('h3');
+        h3.classList.add('title');
         const p = document.createElement('p');
+        p.classList.add('description');
         h3.textContent = description.heading;
         p.textContent = description.text;
         content.appendChild(h3);
