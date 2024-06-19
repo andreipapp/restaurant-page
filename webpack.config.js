@@ -43,4 +43,5 @@ module.exports = {
         port: 9000,
         open: true, // Open the browser automatically
     },
+
 };
