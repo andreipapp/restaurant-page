@@ -7,7 +7,7 @@ module.exports = {
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/', // Ensure correct publicPath for webpack-dev-server
+        clean: true
     },
     devtool: 'inline-source-map',
     plugins: [
